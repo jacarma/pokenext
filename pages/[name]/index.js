@@ -45,7 +45,7 @@ export default function Pokemon({ pokemon }) {
       </fieldset>
 
       <Link href={`/${pokemon.name}/vs/random`}>
-        <a class="fight-btn">Random fight!!</a>
+        <a className="fight-btn">Random fight!!</a>
       </Link>
     </main>
   );

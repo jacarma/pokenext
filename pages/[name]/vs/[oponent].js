@@ -10,7 +10,7 @@ export default function Pokemon({ pokemon, pokemonVs }) {
           <a className="close"></a>
         </Link>
       </div>
-      <div class="columns">
+      <div className="columns">
         <div className="left">
           <PokemonDetails pokemon={pokemon} opponent={pokemonVs} />
         </div>
