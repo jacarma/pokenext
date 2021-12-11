@@ -5,7 +5,7 @@ import PokemonDetails from "../../../component/PokemonDetails";
 export default function Pokemon({ pokemon, pokemonVs }) {
   return (
     <main>
-      <div style={{ textAlign: "right" }}>
+      <div>
         <Link href="../..">
           <a className="close"></a>
         </Link>

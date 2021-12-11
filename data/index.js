@@ -2,14 +2,16 @@ import { parse } from "papaparse";
 import fs from "fs";
 
 const data = fs.readFileSync("data/pokemon.csv", { encoding: "utf-8" });
-const parsed = parse(data, { header: true });
-const pokemons = parsed.data
-  .filter((pokemon) => pokemon.name)
-  .map((pokemon) => ({
-    ...pokemon,
-    abilities: JSON.parse(pokemon.abilities.replace(/'/g, '"')),
-  }));
-const pokemonNames = pokemons.map((pokemon) => pokemon.name);
+const parsed = parse(data, {
+  header: true,
+  skipEmptyLines: true,
+  transform: (value, column) => {
+    if (column !== "abilities") return value;
+    return JSON.parse(value.replace(/'/g, '"'));
+  },
+});
+const pokemons = parsed.data;
+const pokemonNames = pokemons.map((p) => p.name);
 
 export const getPokemons = () => pokemons;
 export const getPokemonNames = () => pokemonNames;

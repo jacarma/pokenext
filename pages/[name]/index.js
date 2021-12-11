@@ -5,7 +5,7 @@ export default function Pokemon({ pokemon }) {
   return (
     <main>
       <Link href=".">
-        <a style={{ float: "right" }} className="close"></a>
+        <a className="close"></a>
       </Link>
       <h1>{pokemon.name}</h1>
       <img
