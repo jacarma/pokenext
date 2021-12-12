@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Pokemon({ pokemon }) {
   return (
     <main>
-      <Link href=".">
+      <Link href="/">
         <a className="close"></a>
       </Link>
       <h1>{pokemon.name}</h1>

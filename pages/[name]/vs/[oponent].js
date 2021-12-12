@@ -6,7 +6,7 @@ export default function Pokemon({ pokemon, pokemonVs }) {
   return (
     <main>
       <div>
-        <Link href="../..">
+        <Link href="/">
           <a className="close"></a>
         </Link>
       </div>

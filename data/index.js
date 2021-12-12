@@ -7,7 +7,8 @@ const parsed = parse(data, {
   skipEmptyLines: true,
   transform: (value, column) => {
     if (column !== "abilities") return value;
-    return JSON.parse(value.replace(/'/g, '"'));
+    const abilities = JSON.parse(value.replace(/'/g, '"'));
+    return [...new Set(abilities)];
   },
 });
 const pokemons = parsed.data;
