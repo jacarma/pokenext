@@ -7,8 +7,6 @@ export default function Pokemons({ pokemonNames }) {
   const shown = pokemonNames.filter((p) =>
     p.toUpperCase().includes(search.toUpperCase())
   );
-  // .slice(0, 100);
-  const isLimited = shown.length === 100;
 
   return (
     <main>
@@ -22,12 +20,11 @@ export default function Pokemons({ pokemonNames }) {
       <ul>
         {shown.map((p) => (
           <li key={p}>
-            <Link href={"./" + p} prefetch={false}>
+            <Link href={"/" + p} prefetch={false}>
               <a>{p}</a>
             </Link>
           </li>
         ))}
-        {/* {isLimited && <li>...</li>} */}
       </ul>
     </main>
   );

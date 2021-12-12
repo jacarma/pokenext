@@ -93,9 +93,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 ul li {
@@ -104,12 +101,13 @@ ul li {
 }
 
 img {
-  width: 500px;
   height: 500px;
+  aspect-ratio: 1;
   -ms-interpolation-mode: nearest-neighbor;
   image-rendering: -moz-crisp-edges;
   image-rendering: pixelated;
   float: left;
+  max-height: 76vw;
 }
 
 dt {
