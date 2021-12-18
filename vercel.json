@@ -1,12 +1,12 @@
 {
   "functions": {
-    "pages/[name]/vs/random": {
+    "pages/[name]/vs/random.js": {
       "includeFiles": "data/pokemon.csv"
     },
-    "pages/[name]/vs/[oponent]": {
+    "pages/[name]/vs/[oponent].js": {
       "includeFiles": "data/pokemon.csv"
     },
-    "api/pokemon": {
+    "api/pokemon.js": {
       "includeFiles": "data/pokemon.csv"
     }
   }
