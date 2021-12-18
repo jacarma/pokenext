@@ -5,6 +5,9 @@
     },
     "pages/[name]/vs/[oponent]": {
       "includeFiles": "data/pokemon.csv"
+    },
+    "api/pokemon": {
+      "includeFiles": "data/pokemon.csv"
     }
   }
 }
