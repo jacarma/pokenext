@@ -1,9 +1,9 @@
 {
   "functions": {
-    "*/vs/random": {
+    "pages/*/vs/random": {
       "includeFiles": "api/pokemon.csv"
     },
-    "*/vs/*": {
+    "pages/*/vs/*": {
       "includeFiles": "api/pokemon.csv"
     }
   }
