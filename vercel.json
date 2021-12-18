@@ -1,9 +1,9 @@
 {
   "functions": {
-    "[name]/vs/random": {
+    "pages/[name]/vs/random": {
       "includeFiles": "data/pokemon.csv"
     },
-    "[name]/vs/[oponent]": {
+    "pages/[name]/vs/[oponent]": {
       "includeFiles": "data/pokemon.csv"
     }
   }
