@@ -25,3 +25,5 @@ export const getPokemon = (name) =>
   pokemons.find((pokemon) => pokemon.name === name);
 export const getRandomName = () =>
   pokemons[Math.floor(Math.random() * pokemons.length)].name;
+
+export const getP = (req, res) => res.send(pokemons);
