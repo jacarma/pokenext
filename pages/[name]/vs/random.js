@@ -1,4 +1,4 @@
-import { server } from "./_server";
+import { server } from "./_baseUrl";
 
 export default function Random() {
   return null;

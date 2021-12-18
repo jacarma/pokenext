@@ -1,6 +1,6 @@
 import Link from "next/link";
 import PokemonDetails from "../../../component/PokemonDetails";
-import { server } from "./_server";
+import { server } from "./_baseUrl";
 
 export default function Pokemon({ pokemon, pokemonVs }) {
   return (
