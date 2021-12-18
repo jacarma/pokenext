@@ -1,2 +1,2 @@
-import { getRandomName } from "./_index.js";
+import { getRandomName } from "./_index";
 export default (req, res) => res.send(getRandomName());
