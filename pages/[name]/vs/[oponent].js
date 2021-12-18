@@ -1,4 +1,4 @@
-import { getPokemon } from "../../../data";
+import { getPokemon } from "../../../api/pokemon";
 import Link from "next/link";
 import PokemonDetails from "../../../component/PokemonDetails";
 

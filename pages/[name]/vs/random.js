@@ -1,4 +1,4 @@
-import { getRandomName } from "../../../data";
+import { getRandomName } from "../../../api/pokemon";
 
 export default function Random() {
   return null;

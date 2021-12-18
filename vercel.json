@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/pokemon.js": {
+      "includeFiles": "api/pokemon.csv"
+    }
+  }
+}

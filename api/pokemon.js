@@ -1,7 +1,12 @@
 import { parse } from "papaparse";
 import fs from "fs";
+import { join } from "path";
+const path = join("api", "pokemon.csv");
+console.log(path);
 
-const data = fs.readFileSync("data/pokemon.csv", { encoding: "utf-8" });
+const data = fs.readFileSync(path, {
+  encoding: "utf-8",
+});
 const parsed = parse(data, {
   header: true,
   skipEmptyLines: true,
