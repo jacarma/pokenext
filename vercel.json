@@ -6,7 +6,7 @@
     "pages/[name]/vs/[oponent].js": {
       "includeFiles": "data/pokemon.csv"
     },
-    "api/pokemon.js": {
+    "pages/api/pokemon.js": {
       "includeFiles": "data/pokemon.csv"
     }
   }
