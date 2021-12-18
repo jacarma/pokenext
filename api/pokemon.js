@@ -1,7 +1,7 @@
 import { parse } from "papaparse";
 import fs from "fs";
 import { join } from "path";
-const path = join("api", "pokemon.csv");
+const path = join("data", "pokemon.csv");
 console.log(path);
 
 const data = fs.readFileSync(path, {
