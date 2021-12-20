@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getPokemonNames } from "./api/pokemon/_index.js";
+import { getPokemonNames } from "../data";
 import Link from "next/link";
 
 export default function Pokemons({ pokemonNames }) {

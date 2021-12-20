@@ -1,4 +1,4 @@
-import { getPokemon, getPokemonNames } from "../api/pokemon/_index.js";
+import { getPokemon, getPokemonNames } from "../../data";
 import Link from "next/link";
 
 export default function Pokemon({ pokemon }) {

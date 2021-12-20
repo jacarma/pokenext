@@ -1,6 +1,6 @@
+import { getPokemon } from "../../../data";
 import Link from "next/link";
 import PokemonDetails from "../../../component/PokemonDetails";
-import { server } from "./_baseUrl";
 
 export default function Pokemon({ pokemon, pokemonVs }) {
   return (
@@ -20,13 +20,9 @@ export default function Pokemon({ pokemon, pokemonVs }) {
   );
 }
 
-export async function getStaticProps({ params: { name, oponent } }) {
-  const pokemon = await (
-    await fetch(`${server}/api/pokemon/getPokemon?name=${name}`)
-  ).json();
-  const pokemonVs = await (
-    await fetch(`${server}/api/pokemon/getPokemon?name=${oponent}`)
-  ).json();
+export function getStaticProps({ params: { name, oponent } }) {
+  const pokemon = getPokemon(name);
+  const pokemonVs = getPokemon(oponent);
   return { props: { pokemon, pokemonVs } };
 }
 

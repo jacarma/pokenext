@@ -1,18 +1,15 @@
-import { server } from "./_baseUrl";
+import { getRandomName } from "../../../data";
 
 export default function Random() {
   return null;
 }
 
-export async function getServerSideProps({ params, req, res }) {
+export async function getServerSideProps({ params }) {
   const leftPokemon = params.name;
-  const opponent = await (
-    await fetch(`${server}/api/pokemon/getRandomName`)
-  ).text();
   return {
     redirect: {
       permanent: false,
-      destination: `/${leftPokemon}/vs/${opponent}`,
+      destination: `/${leftPokemon}/vs/${getRandomName()}`,
     },
     props: {},
   };
